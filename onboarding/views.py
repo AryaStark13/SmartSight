@@ -6,7 +6,6 @@ from rest_framework import generics
 from rest_framework.response import Response
 from .models import *
 from .serializers import *
-import json
 
 
 def get_ip_geolocation_data(ip_address):

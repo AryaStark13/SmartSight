@@ -19,6 +19,7 @@ INSTALLED_APPS = [
     'onboarding',
     'rest_framework',
     'knox',
+    'imageface',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

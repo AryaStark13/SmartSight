@@ -15,6 +15,7 @@ class Profile(models.Model):
     college = models.TextField(null=True, blank=True)
     interests = models.TextField(null=True, blank=True)
 
+
 class Post(models.Model):
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="journalist")
