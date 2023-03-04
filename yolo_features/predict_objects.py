@@ -128,7 +128,7 @@ def get_class_name(class_id):
     return CLASSES[class_id]
 
 def load_yolo(load_yolo_img):
-    load_yolo_img = Image.open("./load_yolo.jpg") 
+    load_yolo_img = Image.open("EnemiesOfSyntax_AIML_01/load_model_img/load_model.jpg") 
     _ = model.predict(load_yolo_img) 
 
 

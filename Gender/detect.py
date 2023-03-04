@@ -10,11 +10,11 @@ Original file is located at
 from deepface import DeepFace
 
 try:
-  analysis = DeepFace.analyze(img_path = "/content/unnamed.jpg", actions = ["gender"]) #mnist image
+  analysis = DeepFace.analyze(img_path = "EnemiesOfSyntax_AIML_01/load_model_img/load_model.jpg", actions = ["gender"]) #mnist image
 except ValueError:
   pass
 
-analysis = DeepFace.analyze(img_path = "/content/dua_lipa1.jpg", actions = ["gender"]) #actual image
+analysis = DeepFace.analyze(img_path = r"C:\Users\ariha\Desktop\COC\datasouls_antispoof\datasouls_antispoof\real_1.jpg", actions = ["gender"]) #actual image
 
 gender = analysis[0]['dominant_gender']
 
@@ -28,3 +28,4 @@ def gender_reveal(gender):
     return male
 
 sex = gender_reveal(gender)
+print(sex)
