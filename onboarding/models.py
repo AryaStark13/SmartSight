@@ -7,12 +7,13 @@ class Profile(models.Model):
         User, related_name='profiledetails', on_delete=models.CASCADE)
     email = models.EmailField(("Email Address"), primary_key=True)
     name = models.CharField(max_length=30)
-    interests = models.TextField(null=True, blank=True)
-    about = models.TextField(null=True, blank=True)
     age = models.TextField(null=True, blank=True)
-    date_of_birth = models.DateField(null=True, blank=True)
+    gender = models.TextField(null=True, blank=True)
+    bio = models.TextField(null=True, blank=True)
     profile_pic = models.ImageField(null=True, blank=True)
-
+    phone = models.TextField(null=True, blank=True)
+    college = models.TextField(null=True, blank=True)
+    interests = models.TextField(null=True, blank=True)
 
 class Post(models.Model):
     user = models.ForeignKey(
