@@ -17,6 +17,4 @@ urlpatterns = [
     path('profileDetail/', ProfileDetail.as_view(), name='profiledetail'),
     path('profileposts/<int:pk>/',
          views.ProfilePosts.as_view(), name='profileposts'),
-
-
 ]
