@@ -5,12 +5,11 @@ import base64
 import io
 
 
-model = tf.keras.models.load_model("./model_real_vs_anim_2.h5")
+model = tf.keras.models.load_model("./real_vs_anime_v3.h5")
 
 CLASSES = {
-    0: 'Anime',
-    1: 'Cartoon',
-    2: 'Human',
+    0: "Anime",
+    1: "Real"
 }
 
 
@@ -25,12 +24,12 @@ my_string = my_string.decode('utf-8')
 
 img = Image.open(io.BytesIO(base64.decodebytes(bytes(my_string, "utf-8"))))
 img = img.convert('RGB')
-img = img.resize((427, 446))
+img = img.resize((64, 64))
 img = np.array(img)
-img = img.reshape(1, 427, 446, 3)
+img = img.reshape(1, 64, 64, 3)
 
 yhat = model.predict(img)[0]
 
-print(yhat)
-# pred_class = CLASSES[np.argmax(yhat)]
-# print(pred_class)
+# print(yhat)
+pred_class = CLASSES[np.argmax(yhat)]
+print(pred_class)
