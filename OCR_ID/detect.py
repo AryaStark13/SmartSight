@@ -1,22 +1,29 @@
-# -*- coding: utf-8 -*-
 import cv2
-import numpy as np
 import pytesseract
-import matplotlib.pyplot as plt
-import pandas as pd
 from PIL import Image
-import string
+import numpy as np
+import base64
+import io
+import re
+from datetime import date
 
-from google.colab.patches import cv2_imshow
+# important: set the path to your tesseract.exe file
+pytesseract.pytesseract.tesseract_cmd = r"C:/Program Files/Tesseract-OCR/tesseract.exe"
 
-img = cv2.imread('/content/aryanid.jpg') #enter image here
+with open(r"C:\Users\ariha\Desktop\COC\EnemiesOfSyntax_AIML_01\OCR_ID\arihant_id.jpeg", "rb") as img_file:
+    my_string = base64.b64encode(img_file.read())
+# data['image'] = data['image'].replace('data:image/png;base64,', '')
+my_string = my_string.decode('utf-8')
+
+
+img = Image.open(io.BytesIO(base64.decodebytes(bytes(my_string, "utf-8"))))
+img = cv2.cvtColor(np.array(img), cv2.COLOR_RGB2BGR)
+
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 th, threshed = cv2.threshold(gray, 127,255, cv2.THRESH_BINARY)
-text2 = pytesseract.image_to_string(threshed, lang="ind")
-print(text2)
-cv2_imshow(threshed)
 
-import re
+text2 = pytesseract.image_to_string(threshed, lang="eng")
+# print(text2)
 text2 = re.sub(r'[^\w\s]', '', text2)
 
 list1 = text2.split()
@@ -36,8 +43,6 @@ day = list2[2][:2]
 year = int(year)
 month = int(month)
 day = int(day)
-
-from datetime import date
  
 def get_age(birthdate):
     today = date.today()
@@ -48,4 +53,4 @@ age = (get_age(date(year, month, day)))
 
 list2[2] = age
 
-list2# Name, LAstName, Age, PhoneNumber
+print(list2) # Name, LAstName, Age, PhoneNumber
