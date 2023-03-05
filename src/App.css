@@ -1,26 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Montserrat:wght@400;500&display=swap");
-
-body {
-    color: #B0B0B0;
-    background-color: #1A191E;
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    line-height: 1.65;
-}
-
-body.loaded {
-    overflow-y: scroll;
-}
-
 ::-moz-selection {
     color: #ffffff;
-    background-color: rgba(228, 17, 47, 0.7);
+    background-color: rgba(17, 228, 126, 0.7);
     text-shadow: none;
 }
 
 ::selection {
     color: #ffffff;
-    background-color: rgba(228, 17, 47, 0.7);
+    background-color: rgba(17, 228, 130, 0.7);
     text-shadow: none;
 }
 
@@ -48,7 +34,7 @@ body.loaded {
     font-size: 15px;
     padding: 10px 25px;
     letter-spacing: 0.1em;
-    color: #ffffff;
+    color: #212121;
     font-family: "Barlow Condensed", sans-serif;
     border-radius: 0;
     border: 0;
@@ -62,19 +48,19 @@ body.loaded {
 
 .btn:hover {
     color: #ffffff;
-    background-color: rgba(228, 17, 47, 0.7);
+    background-color: rgba(17, 228, 151, 0.7);
 }
 
 .btn:active,
 .btn:focus {
     border: 0;
     color: #ffffff;
-    background-color: rgba(228, 17, 47, 0.7);
+    background-color: rgba(21, 163, 240, 0.7);
     box-shadow: none;
 }
 
 .btn-primary {
-    background-color: #E4112F;
+    background-color: #11e4cf;
 }
 
 .search-form {
@@ -564,7 +550,6 @@ li {
 }
 
 .mobile-nav {
-    display: none;
     position: relative;
     z-index: 9992;
 }

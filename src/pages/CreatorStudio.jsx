@@ -1,5 +1,5 @@
 import "./CreatorStudio.css";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Swal from "sweetalert2";
 
 function CreatorStudio() {
@@ -7,7 +7,6 @@ function CreatorStudio() {
   const [previewImage, setPreviewImage] = useState(null);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
-  const [content, setContent] = useState("");
   const [url, setUrl] = useState("");
   const [location, setLocation] = useState("");
   const [category, setCategory] = useState("");
@@ -53,9 +52,9 @@ function CreatorStudio() {
       requestOptions
     )
       .then((response) => {
-        if(response.status ==201){
+        if (response.status == 201) {
           Swal.fire("This text has content with hate bitch", "error");
-        }else if(response.status==200){
+        } else if (response.status == 200) {
           Swal.fire("Post Created Successfully", "success");
         }
         return response.json();
