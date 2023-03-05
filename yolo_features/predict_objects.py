@@ -1,5 +1,7 @@
 from ultralytics import YOLO
 from PIL import Image
+import base64
+import io
 
 CLASSES = {
  0: 'person',
@@ -131,10 +133,14 @@ def load_yolo(load_yolo_img):
     load_yolo_img = Image.open("EnemiesOfSyntax_AIML_01/load_model_img/load_model.jpg") 
     _ = model.predict(load_yolo_img) 
 
+with open(r"C:\Users\ariha\Desktop\COC\EnemiesOfSyntax_AIML_01\yolo_features\dog.jpg", "rb") as img_file:
+    my_string = base64.b64encode(img_file.read())
+# data['image'] = data['image'].replace('data:image/png;base64,', '')
+my_string = my_string.decode('utf-8')
 
+img = Image.open(io.BytesIO(base64.decodebytes(bytes(my_string, "utf-8"))))
 
-input_img = None # convert to PIL image.
-results = model.predict("./bus.jpg") 
+results = model.predict(img) 
 pred_classes = [int(x) for x in list(results[0].boxes.cls.cpu().numpy())]
 pred_classes = list(set(pred_classes))
 
