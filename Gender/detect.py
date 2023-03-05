@@ -24,7 +24,7 @@ img = Image.open(io.BytesIO(base64.decodebytes(bytes(my_string, "utf-8"))))
 img = img.convert('RGB')
 img.save('./img.png')
 
-analysis = DeepFace.analyze(img_path = './img.png', actions = ["gender"]) #actual image
+analysis = DeepFace.analyze(img_path = './img.png', actions = ["age", "gender", "emotion", "race"]) #actual image
 
 gender = analysis[0]['dominant_gender']
 
@@ -38,4 +38,6 @@ def gender_reveal(gender):
     return male
 
 sex = gender_reveal(gender)
-print(sex)
+age = analysis[0]['age']
+emotion = analysis[0]['dominant_emotion']
+race = analysis[0]['dominant_race']
