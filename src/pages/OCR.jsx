@@ -3,7 +3,7 @@ import FileBase64 from "react-file-base64";
 
 const Gender = () => {
   const [image, setImage] = useState("");
-  const [gender, setGender] = useState("");
+  const [details, setDetails] = useState("");
   const [model, setModel] = useState(false);
   const [loadingTime, setLoadingTime] = useState(0);
   const [submitClicked, setSubmitClicked] = useState(false);
@@ -38,7 +38,7 @@ const Gender = () => {
       const res = await fetch(url, optionsPOST);
       const data = await res.json();
       console.log(data.image);
-      setGender(data.image);
+      setDetails(data.image);
       setLoadingTime(parseInt(data.loading_time));
     } catch (error) {
       alert(error);
@@ -52,7 +52,7 @@ const Gender = () => {
           <div className="row">
             <div className="col-lg-10 col-md-12 col-sm-12">
               <span className="text-color">SmartSight API</span>
-              <h3 className="text-md mb-5">Contact Form</h3>
+              <h3 className="text-md mb-5">Optical Character Recogntion</h3>
               <div className="row">
                 <div className="col-lg-8">
                   <form id="contact-form" className="contact__form form">
@@ -80,7 +80,7 @@ const Gender = () => {
                       <>Model is Loading...</>
                     )}
                   </form>
-                  Details: {gender}
+                  {/* Details: {Object.entries(details.detail).map(([key, value]) => ())} */}
                 </div>
                 <div className="col-lg-6"></div>
               </div>

@@ -52,7 +52,7 @@ const Gender = () => {
           <div className="row">
             <div className="col-lg-10 col-md-12 col-sm-12">
               <span className="text-color">SmartSight API</span>
-              <h3 className="text-md mb-5">Contact Form</h3>
+              <h3 className="text-md mb-5">Interest Identification</h3>
               <div className="row">
                 <div className="col-lg-8">
                   <form id="contact-form" className="contact__form form">

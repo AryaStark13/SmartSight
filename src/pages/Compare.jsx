@@ -84,7 +84,7 @@ const Gender = () => {
                       Send Message
                     </button>
                   </form>
-                  Gender: {gender}
+                  Same: {gender}
                 </div>
                 <div className="col-lg-6"></div>
               </div>

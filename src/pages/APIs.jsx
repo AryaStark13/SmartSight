@@ -18,7 +18,7 @@ const APIs = () => {
             <div className="col-lg-6">
               <div className="service-info ">
                 <span className="text-color font-weight-bold">01</span>
-                <h3 className="text-md mb-4 mt-2">Gender Detection</h3>
+                <h3 className="text-md mb-4 mt-2">Lightning Fast Responses</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Animi voluptatum, nobis quos dolores reiciendis unde. Est
@@ -34,9 +34,7 @@ const APIs = () => {
               <div className="col-lg-6">
                 <div className="service-info mb-5 mb-lg-0">
                   <span className="text-color font-weight-bold">02</span>
-                  <h3 className="text-md mb-4 mt-2">
-                    Optical Character Recognition
-                  </h3>
+                  <h3 className="text-md mb-4 mt-2">Open Source</h3>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Animi voluptatum, nobis quos dolores reiciendis unde. Est
@@ -70,7 +68,7 @@ const APIs = () => {
             <div className="col-lg-6">
               <div className="service-info">
                 <span className="text-color font-weight-bold">03</span>
-                <h3 className="text-md mb-4 mt-2">Animated Face Detection</h3>
+                <h3 className="text-md mb-4 mt-2">AI Enhancement</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Animi voluptatum, nobis quos dolores reiciendis unde. Est

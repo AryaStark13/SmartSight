@@ -9,11 +9,12 @@ const Footer = () => {
           <div className="col-lg-3 mr-auto col-sm-6">
             <div className="widget mb-5 mb-lg-0">
               <div className="logo mb-4">
-                <h3>Orbitor</h3>
+                <h3>Smart Sight</h3>
               </div>
               <p>
-                Tempora dolorem voluptatum nam vero assumenda voluptate, facilis
-                ad eos obcaecati tenetur veritatis eveniet distinctio possimus.
+                With our API, you can easily integrate face detection and
+                recognition functionality into your applications, enabling them
+                to analyze and interpret visual data in real-time.
               </p>
             </div>
           </div>
@@ -46,7 +47,7 @@ const Footer = () => {
                   <Link to="/gender">Gender</Link>
                 </li>
                 <li>
-                  <Link to="/age">Age</Link>
+                  <Link to="/compare">Compare</Link>
                 </li>
                 <li>
                   <Link to="/ocr">OCR</Link>
@@ -62,14 +63,13 @@ const Footer = () => {
               <h4 className="text-capitalize mb-4">Get in Touch</h4>
               <h6>
                 <Link to="tel:+23-345-67890">
-                  {" "}
-                  <i className="ti-headphone-alt mr-3"></i>Support@megakit.com
+                  <i className="ti-headphone-alt mr-3"></i>
+                  SmartSight@gmail.com
                 </Link>
               </h6>
               <h6>
                 <Link to="mailto:support@gmail.com">
-                  {" "}
-                  <i className="ti-mobile mr-3"></i>+23-456-6588
+                  <i className="ti-mobile mr-3"></i>+91 98674 66628
                 </Link>
               </h6>
 
