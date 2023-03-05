@@ -43,16 +43,16 @@ const Footer = () => {
 
               <ul className="list-unstyled footer-menu lh-35">
                 <li>
-                  <Link to="#">Gender</Link>
+                  <Link to="/gender">Gender</Link>
                 </li>
                 <li>
-                  <Link to="#">Age</Link>
+                  <Link to="/age">Age</Link>
                 </li>
                 <li>
-                  <Link to="#">OCR</Link>
+                  <Link to="/ocr">OCR</Link>
                 </li>
                 <li>
-                  <Link to="#">Interests</Link>
+                  <Link to="/interests">Interests</Link>
                 </li>
               </ul>
             </div>

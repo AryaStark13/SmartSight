@@ -81,8 +81,8 @@ const Header = () => {
             </li>
           </ul>
 
-          <Link to="/demo" className="btn btn-solid-border d-none d-lg-block">
-            Demo <i className="fa fa-angle-right ml-2"></i>
+          <Link to="/" className="btn btn-solid-border d-none d-lg-block">
+            Login <i className="fa fa-angle-right ml-2"></i>
           </Link>
         </div>
       </div>
