@@ -36,17 +36,20 @@ const Login = () => {
 
   async function createacc() {
     try {
-      let result = await fetch("http://127.0.0.1:8000/onboarding/login/", {
-        method: "POST",
-        body: JSON.stringify({
-          password: values.password,
-          username: values.username,
-        }),
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-      });
+      let result = await fetch(
+        "https://backend-azwntgz73q-uc.a.run.app/onboarding/login/",
+        {
+          method: "POST",
+          body: JSON.stringify({
+            password: values.password,
+            username: values.username,
+          }),
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+        }
+      );
       result = await result.json();
       console.log(result);
       if (result.token) {
@@ -68,52 +71,56 @@ const Login = () => {
   }
 
   return (
-    <div>
-      <form className="mt-5 mb-5 login-input" onSubmit={handleSubmit}>
-        <div className="form-group">
-          <input
-            type="text"
-            className="form-control"
-            placeholder="Username"
-            id="username"
-            label="Username"
-            name="username"
-            value={values.username}
-            onChange={handleChanges}
-            autoComplete="name"
-            autoFocus
-            required
-          />
+    <div className="contact-form-wrap section">
+      <div className="container">
+        <div className="row">
+          <form className="mt-5 mb-5 contact__form" onSubmit={handleSubmit}>
+            <div className="form-group">
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Username"
+                id="username"
+                label="Username"
+                name="username"
+                value={values.username}
+                onChange={handleChanges}
+                autoComplete="name"
+                autoFocus
+                required
+              />
+            </div>
+            <div className="form-group">
+              <input
+                type="password"
+                className="form-control"
+                placeholder="Password"
+                name="password"
+                label="Password"
+                id="password"
+                value={values.password.trim()}
+                onChange={handleChange("password")}
+                autoComplete="current-password"
+                required
+              />
+            </div>
+            <button
+              className="btn btn-primary text-uppercase"
+              type="submit"
+              style={{ marginTop: "20px" }}
+            >
+              Login
+            </button>
+          </form>
+          <p className="mt-5 login-form__footer">
+            Dont have an account?
+            <Link to="/signup" className="text-primary">
+              Sign Up
+            </Link>
+            now
+          </p>
         </div>
-        <div className="form-group">
-          <input
-            type="password"
-            className="form-control"
-            placeholder="Password"
-            name="password"
-            label="Password"
-            id="password"
-            value={values.password.trim()}
-            onChange={handleChange("password")}
-            autoComplete="current-password"
-            required
-          />
-        </div>
-        <button
-          className="btn btn-primary text-uppercase"
-          type="submit"
-          style={{ marginTop: "20px" }}
-        >
-          Login
-        </button>
-      </form>
-      <p className="mt-5 login-form__footer">
-        Dont have an account?
-        <Link to="/signup" className="text-primary">
-          Sign Up
-        </Link>
-        now
-      </p>
+      </div>
     </div>
   );
 };

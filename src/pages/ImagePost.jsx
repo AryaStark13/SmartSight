@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from "react";
 import FileBase64 from "react-file-base64";
-// import CircularIndeterminate from "./CircularIndeterminateComponent";
-
-// TODO: Add example images to test
 
 const Home = () => {
   const [image, setImage] = useState("");
@@ -10,7 +7,6 @@ const Home = () => {
   const [model, setModel] = useState(false);
   const [loadingTime, setLoadingTime] = useState(0);
   const [submitClicked, setSubmitClicked] = useState(false);
-  // const [imageList, setImageList] = useState([]);
   const url = "http://127.0.0.1:8000/api/";
 
   const optionsPOST = {
@@ -44,15 +40,10 @@ const Home = () => {
       console.log(data);
       setUpdatedImage(data.image);
       setLoadingTime(parseInt(data.loading_time));
-      // setSubmitClicked(false);
     } catch (error) {
       alert(error);
     }
   };
-
-  // const importImages = (r) => {
-  //   r.keys().map((item, index) => { setImageList.push(r(item)); });
-  // };
 
   return (
     <div>
@@ -81,10 +72,7 @@ const Home = () => {
                 Submit
               </button>
             ) : (
-              <>
-                Model is Loading...
-                {/* <CircularIndeterminate /> */}
-              </>
+              <>Model is Loading...</>
             )}
           </form>
         </div>
@@ -110,33 +98,14 @@ const Home = () => {
                   className="original image"
                   src={image.base64}
                   alt="original"
-                  // height={500}
-                  // width={500}
                 />
                 <br />
               </>
             ) : null}
           </div>
-          <div style={{ paddingLeft: "10px" }}>
-            
-          </div>
+          <div style={{ paddingLeft: "10px" }}></div>
         </div>
       </div>
-
-      {/* <div>
-        <h1>Example Images to test</h1>
-        <div className="example-images">
-          {
-            imageList.map((image, index) => {
-              return (
-                <div key={index} className="example-image">
-                  <img src={image} alt="example" />
-                </div>
-              );
-            })
-          }
-        </div>
-      </div> */}
     </div>
   );
 };
