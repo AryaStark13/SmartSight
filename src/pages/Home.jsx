@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -10,19 +11,22 @@ const Home = () => {
             <div className="col-lg-10 col-md-12 col-xl-8">
               <div className="block">
                 <span className="text-uppercase text-sm letter-spacing ">
-                  The most powerful Solution
+                  Enhance your
                 </span>
-                <h1 className="mb-3 mt-3">Digital experience with Orbitor</h1>
+                <h1 className="mb-3 mt-3">
+                  Virtual experience with SmartSight API
+                </h1>
                 <p className="mb-5">
-                  Veritatis earum aliquid doloribus molestias, eveniet molestiae
-                  aperiam ratione. Facilis velit voluptatibus impedit eligendi
-                  delectus illo earum voluptatum, laudantium molestiae!
+                  With our API, you can easily integrate face detection and
+                  recognition functionality into your applications, enabling
+                  them to analyze and interpret visual data in real-time. Start
+                  exploring our API today and see how it can transform the way
+                  you build your applications.
                 </p>
-
-                <a href="about.html" target="_blank" className="btn btn-main">
-                  Learn more about Digicon
+                <Link to="/docs" className="btn btn-main">
+                  Learn more about SmartSight API
                   <i className="fa fa-angle-right ml-2"></i>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -38,12 +42,10 @@ const Home = () => {
                 </div>
 
                 <div className="content">
-                  <h4 className="mt-3 mb-3">
-                    Custom Effective Software development
-                  </h4>
+                  <h4 className="mt-3 mb-3">Lightning Fast Responses</h4>
                   <p className="mb-4">
-                    Saepe nulla praesentium eaque omnis perferendis a
-                    doloremque.
+                    Our Cloud based implementation enables us to provide super
+                    fast responses to your requests.
                   </p>
 
                   <a href="#"> Read More </a>
@@ -57,12 +59,10 @@ const Home = () => {
                   <i className="ti-panel"></i>
                 </div>
                 <div className="content">
-                  <h4 className="mt-3 mb-3">
-                    Analyse Your Expensees On Every Device
-                  </h4>
+                  <h4 className="mt-3 mb-3">Open Source</h4>
                   <p className="mb-4">
-                    Saepe nulla praesentium eaque omnis perferendis a
-                    doloremque.
+                    Our Open Source APIs are free to use and open to collaborate
+                    to all
                   </p>
                   <a href="#"> Read More </a>
                 </div>
@@ -75,12 +75,9 @@ const Home = () => {
                   <i className="ti-headphone-alt"></i>
                 </div>
                 <div className="content">
-                  <h4 className="mt-3 mb-3">
-                    Creating a dedicated IT business growth
-                  </h4>
+                  <h4 className="mt-3 mb-3">AI Enhancement</h4>
                   <p className="mb-4">
-                    Saepe nulla praesentium eaque omnis perferendis a
-                    doloremque.
+                    Enhanced AI Models that provide state of the art results
                   </p>
                   <a href="#"> Read More </a>
                 </div>
@@ -161,186 +158,6 @@ const Home = () => {
                 <a href="project.html" className="btn btn-main">
                   Portfolio<i className="fa fa-angle-right ml-2"></i>
                 </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="section portfolio pb-0">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-8">
-              <div className="heading">
-                <h2 className="mb-4">
-                  We’ve Done Lot’s of Work, Let’s Check Some From Here
-                </h2>
-                <p>
-                  We have the best experts to elevate your business to the next
-                  level, try is and you will see! We have the best experts to
-                  elevate your
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="container-fluid">
-          <div className="row portfolio-gallery">
-            <div className="col-lg-4 col-md-6">
-              <div className="portflio-item position-relative mb-4">
-                <a href="project-details.html">
-                  <img
-                    src="images/portfolio/1.jpg"
-                    alt=""
-                    className="img-fluid w-100"
-                  />
-                  <div className="overlay-item">
-                    <i className="ti-link"></i>
-                  </div>
-
-                  <div className="portfolio-item-content">
-                    <h3 className="mb-0 text-white">Project california</h3>
-                    <p className="text-white-50">Web Development</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6">
-              <div className="portflio-item position-relative mb-4">
-                <a href="project-details.html">
-                  <img
-                    src="images/portfolio/2.jpg"
-                    alt=""
-                    className="img-fluid w-100"
-                  />
-                  <div className="overlay-item">
-                    <i className="ti-link"></i>
-                  </div>
-                  <div className="portfolio-item-content">
-                    <h3 className="mb-0 text-white">Project california</h3>
-                    <p className="text-white-50">Web Development</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6">
-              <div className="portflio-item position-relative mb-4">
-                <a href="project-details.html">
-                  <img
-                    src="images/portfolio/3.jpg"
-                    alt=""
-                    className="img-fluid w-100"
-                  />
-
-                  <div className="overlay-item">
-                    <i className="ti-link"></i>
-                  </div>
-                  <div className="portfolio-item-content">
-                    <h3 className="mb-0 text-white">Project california</h3>
-                    <p className="text-white-50">Web Development</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6">
-              <div className="portflio-item position-relative mb-4">
-                <a href="project-details.html">
-                  <img
-                    src="images/portfolio/4.jpg"
-                    alt=""
-                    className="img-fluid w-100"
-                  />
-
-                  <div className="overlay-item">
-                    <i className="ti-link"></i>
-                  </div>
-                  <div className="portfolio-item-content">
-                    <h3 className="mb-0 text-white">Project california</h3>
-                    <p className="text-white-50">Web Development</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6">
-              <div className="portflio-item position-relative  mb-4">
-                <a href="project-details.html">
-                  <img
-                    src="images/portfolio/5.jpg"
-                    alt=""
-                    className="img-fluid w-100"
-                  />
-
-                  <div className="overlay-item">
-                    <i className="ti-link"></i>
-                  </div>
-                  <div className="portfolio-item-content">
-                    <h3 className="mb-0 text-white">Project california</h3>
-                    <p className="text-white-50">Web Development</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6">
-              <div className="portflio-item position-relative mb-4">
-                <a href="project-details.html">
-                  <img
-                    src="images/portfolio/6.jpg"
-                    alt=""
-                    className="img-fluid w-100"
-                  />
-
-                  <div className="overlay-item">
-                    <i className="ti-link"></i>
-                  </div>
-                  <div className="portfolio-item-content">
-                    <h3 className="mb-0 text-white">Project california</h3>
-                    <p className="text-white-50">Web Development</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="section counter">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-3 col-md-6 col-sm-6">
-              <div className="counter-item text-center mb-5 mb-lg-0">
-                <h2 className="mb-0">
-                  <span className="counter-stat font-weight-bold">1730</span> +
-                </h2>
-                <p>Project Done</p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-6">
-              <div className="counter-item text-center mb-5 mb-lg-0">
-                <h2 className="mb-0">
-                  <span className="counter-stat font-weight-bold">125 </span>M{" "}
-                </h2>
-                <p>User Worldwide</p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-6">
-              <div className="counter-item text-center mb-5 mb-lg-0">
-                <h2 className="mb-0">
-                  <span className="counter-stat font-weight-bold">39</span>
-                </h2>
-                <p>Availble Country</p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-6">
-              <div className="counter-item text-center">
-                <h2 className="mb-0">
-                  <span className="counter-stat font-weight-bold">14</span>
-                </h2>
-                <p>Award Winner </p>
               </div>
             </div>
           </div>

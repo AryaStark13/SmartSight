@@ -18,7 +18,7 @@ const APIs = () => {
             <div className="col-lg-6">
               <div className="service-info ">
                 <span className="text-color font-weight-bold">01</span>
-                <h3 className="text-md mb-4 mt-2">Custom Software development</h3>
+                <h3 className="text-md mb-4 mt-2">Gender Detection</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Animi voluptatum, nobis quos dolores reiciendis unde. Est
@@ -34,7 +34,9 @@ const APIs = () => {
               <div className="col-lg-6">
                 <div className="service-info mb-5 mb-lg-0">
                   <span className="text-color font-weight-bold">02</span>
-                  <h3 className="text-md mb-4 mt-2">Software Maintenance</h3>
+                  <h3 className="text-md mb-4 mt-2">
+                    Optical Character Recognition
+                  </h3>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Animi voluptatum, nobis quos dolores reiciendis unde. Est
@@ -68,7 +70,7 @@ const APIs = () => {
             <div className="col-lg-6">
               <div className="service-info">
                 <span className="text-color font-weight-bold">03</span>
-                <h3 className="text-md mb-4 mt-2">Web App Development</h3>
+                <h3 className="text-md mb-4 mt-2">Animated Face Detection</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Animi voluptatum, nobis quos dolores reiciendis unde. Est
@@ -80,131 +82,6 @@ const APIs = () => {
           </div>
         </div>
       </section>
-      <section className="section case-study">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-8">
-              <div className="case-study-content text-center mb-5">
-                <h2 className="mb-4">How we works</h2>
-                <p>
-                  There are many variations of lorem passages of Lorem Ipsum
-                  available, but the majority have suffered. All the Lorem Ipsum
-                  generators.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="case-timeline">
-            <div className="case-timeline-divider"></div>
-            <div className="case-timeline-dot"></div>
-
-            <div className="row align-items-center">
-              <div className="col-lg-6">
-                <div className="case-img ">
-                  <img
-                    src="images/about/process-3.jpg"
-                    alt=""
-                    className="img-fluid"
-                  />
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="case-content">
-                  <h4 className="mb-3">Competitor Research</h4>
-                  <p>
-                    Nihil fugit officia esse vero, animi tenetur ullam, dolor
-                    aperiam minus aliquid enim laudantium fuga! Commodi
-                    voluptas, deleniti distinctio quam totam vitae.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="case-timeline">
-            <div className="case-timeline-divider"></div>
-            <div className="case-timeline-dot"></div>
-            <div className="row align-items-center">
-              <div className="col-lg-6 order-2 order-lg-1">
-                <div className="case-content">
-                  <h4 className="mb-3">Making Functional Strategy</h4>
-                  <p>
-                    Nihil fugit officia esse vero, animi tenetur ullam, dolor
-                    aperiam minus aliquid enim laudantium fuga! Commodi
-                    voluptas, deleniti distinctio quam totam vitae.
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-6  order-1 order-lg-2">
-                <div className="case-img">
-                  <img
-                    src="images/about/process-2.jpg"
-                    alt=""
-                    className="img-fluid"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="case-timeline">
-            <div className="case-timeline-divider"></div>
-            <div className="case-timeline-dot"></div>
-
-            <div className="row align-items-center">
-              <div className="col-lg-6">
-                <div className="case-img">
-                  <img
-                    src="images/about/process-1.jpg"
-                    alt=""
-                    className="img-fluid"
-                  />
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="case-content">
-                  <h4 className="mb-3">Project Outline</h4>
-                  <p>
-                    Nihil fugit officia esse vero, animi tenetur ullam, dolor
-                    aperiam minus aliquid enim laudantium fuga! Commodi
-                    voluptas, deleniti distinctio quam totam vitae.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="case-timeline">
-            <div className="case-timeline-divider"></div>
-            <div className="case-timeline-dot"></div>
-
-            <div className="row align-items-center">
-              <div className="col-lg-6 order-2 order-lg-1">
-                <div className="case-content">
-                  <h4 className="mb-3">Final Delivery</h4>
-                  <p>
-                    Nihil fugit officia esse vero, animi tenetur ullam, dolor
-                    aperiam minus aliquid enim laudantium fuga! Commodi
-                    voluptas, deleniti distinctio quam totam vitae.
-                  </p>
-                </div>
-              </div>
-
-              <div className="col-lg-6  order-1 order-lg-2">
-                <div className="case-img">
-                  <img
-                    src="images/about/structure_sass.png"
-                    alt=""
-                    className="img-fluid"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="section service">
         <div className="container">
           <div className="row">

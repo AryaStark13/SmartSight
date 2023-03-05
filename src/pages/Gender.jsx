@@ -3,11 +3,15 @@ import FileBase64 from "react-file-base64";
 
 const Gender = () => {
   const [image, setImage] = useState("");
+  const [previewImage, setPreviewImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState(null);
   const [gender, setGender] = useState("");
   const [model, setModel] = useState(false);
   const [loadingTime, setLoadingTime] = useState(0);
   const [submitClicked, setSubmitClicked] = useState(false);
   const url = "http://127.0.0.1:8000/api/";
+
+  const handleImageUpload = (event) => {};
 
   const optionsPOST = {
     method: "POST",
@@ -51,8 +55,8 @@ const Gender = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-10 col-md-12 col-sm-12">
-              <span className="text-color">Send a message</span>
-              <h3 className="text-md mb-5">Contact Form</h3>
+              <span className="text-color">SmartSight API</span>
+              <h3 className="text-md mb-5">Gender Classification</h3>
               <div className="row">
                 <div className="col-lg-8">
                   <form id="contact-form" className="contact__form form">
@@ -82,7 +86,9 @@ const Gender = () => {
                   </form>
                   Gender: {gender}
                 </div>
-                <div className="col-lg-6"></div>
+                <div className="col-lg-6">
+                  <img src={image} />
+                </div>
               </div>
             </div>
           </div>
