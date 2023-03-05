@@ -5,7 +5,7 @@ import base64
 import io
 
 
-model = tf.keras.models.load_model("./model_real_vs_anim.h5")
+model = tf.keras.models.load_model("./model_real_vs_anim_2.h5")
 
 CLASSES = {
     0: 'Anime',
@@ -15,7 +15,7 @@ CLASSES = {
 
 
 # remove for production:
-with open(r"C:\Users\ariha\Desktop\COC\EnemiesOfSyntax_AIML_01\real_vs_fake_face\real_1.jpg", "rb") as img_file:
+with open(r"C:\Users\ariha\Desktop\COC\EnemiesOfSyntax_AIML_01\real_vs_anim\anim_1.jpeg", "rb") as img_file:
     my_string = base64.b64encode(img_file.read())
 my_string = my_string.decode('utf-8')
 
