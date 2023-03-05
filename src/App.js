@@ -9,6 +9,9 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Gender from "./pages/Gender";
 import Interests from "./pages/Interests";
+import OCR from "./pages/OCR";
+import Compare from "./pages/Compare";
+import Real from "./pages/Real";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import APIs from "./pages/APIs";
@@ -36,6 +39,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/gender" element={<Gender />} />
           <Route path="/interests" element={<Interests />} />
+          <Route path="/ocr" element={<OCR />} />
+          <Route path="/compare" element={<Compare />} />
+          <Route path="/real" element={<Real />} />
           <Route path="/apis" element={<APIs />} />
           <Route path="/docs-python" element={<Python />} />
           <Route path="/docs-js" element={<Javascript />} />
