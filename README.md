@@ -16,3 +16,6 @@
 ***Real vs Animated*** - confidence level for whether an input image is real or animated.
 
 ***Verify Similarity*** - boolean value indicating similarity between input and reference image.
+
+# Awards
+![1st Place in AI/ML Domain Certificate](https://imagizer.imageshack.com/img924/9486/KOUU45.jpg)
