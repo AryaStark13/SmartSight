@@ -13,14 +13,10 @@ CLASSES = {
 }
 
 
-# remove for production:
-with open(r"C:\Users\ariha\Desktop\COC\EnemiesOfSyntax_AIML_01\real_vs_anim\anim_1.jpeg", "rb") as img_file:
+with open("", "rb") as img_file:
     my_string = base64.b64encode(img_file.read())
 my_string = my_string.decode('utf-8')
 
-# add for production:
-# my_string = my_string.replace('data:image/png;base64,', '')
-# data['image'] = data['image'].replace('data:image/png;base64,', '')
 
 img = Image.open(io.BytesIO(base64.decodebytes(bytes(my_string, "utf-8"))))
 img = img.convert('RGB')
@@ -30,6 +26,5 @@ img = img.reshape(1, 64, 64, 3)
 
 yhat = model.predict(img)[0]
 
-# print(yhat)
 pred_class = CLASSES[np.argmax(yhat)]
 print(pred_class)
