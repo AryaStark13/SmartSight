@@ -10,12 +10,12 @@ from django.views.decorators.csrf import csrf_exempt
 import time
 
 # try:
-#     # with open(r'E:\Coding\COC\backend\media\images\logo-no-bg.png', "rb") as img_file:
+#     # with open(r'', "rb") as img_file:
 #     #     my_string = base64.b64encode(img_file.read())
-#     # # image = open(r'E:\Coding\COC\backend\media\images\logo-no-bg.png', 'rb')
+#     # # image = open(r'', 'rb')
 #     # # image_read = image.read()
 #     analysis = DeepFace.analyze(
-#         img_path=r"E:\Coding\COC\backend\load_model.jpg", actions=["gender"])
+#         img_path=r"", actions=["gender"])
 # except ValueError as e:
 #     print(e)
 #     pass
@@ -47,8 +47,8 @@ class GetImage(View):
                                         "gender"])
             gender = analysis[0]['dominant_gender']
 
-            male = 'male'
-            female = 'female'
+            male = 'Male'
+            female = 'Female'
 
             def gender_reveal(gender):
                 if gender == 'Woman':
@@ -59,8 +59,8 @@ class GetImage(View):
             sex = gender_reveal(gender)
         except ValueError as e:
             print(e)
-            sex = "chakka"
-            print("ERROR HAI LAVDE")
+            sex = "Can't determine"
+            print("Erroe")
 
         print(sex)
         toc = time.time()
