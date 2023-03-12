@@ -47,7 +47,9 @@ class Verify(View):
             verification = DeepFace.verify(
                 img1_path='temp_img1.png', img2_path='temp_img2.png')
             BinaryVerification = verification['verified']
+            print('try')
         except ValueError:
+            print('except')
             BinaryVerification = False
 
         toc = time.time()

@@ -41,7 +41,6 @@ class GetInfo(View):
         th, threshed = cv2.threshold(gray, 127, 255, cv2.THRESH_BINARY)
 
         text2 = pytesseract.image_to_string(threshed, lang="eng")
-        # print(text2)
         text2 = re.sub(r'[^\w\s]', '', text2)
 
         list1 = text2.split()

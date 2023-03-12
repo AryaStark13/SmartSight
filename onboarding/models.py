@@ -14,14 +14,3 @@ class Profile(models.Model):
     phone = models.TextField(null=True, blank=True)
     college = models.TextField(null=True, blank=True)
     interests = models.TextField(null=True, blank=True)
-
-
-class Post(models.Model):
-    user = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="journalist")
-    source = models.TextField(null=True, blank=True)
-    title = models.TextField(null=True, blank=True)
-    description = models.TextField(null=True, blank=True)
-    url = models.TextField(null=True, blank=True)
-    content = models.TextField(null=True, blank=True)
-    Image = models.ImageField(null=True, blank=True)
