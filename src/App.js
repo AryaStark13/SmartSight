@@ -13,7 +13,6 @@ import OCR from "./pages/OCR";
 import Compare from "./pages/Compare";
 import Real from "./pages/Real";
 import About from "./pages/About";
-import APIs from "./pages/APIs";
 // import alanBtn from "@alan-ai/alan-sdk-web";
 
 function App() {
@@ -38,7 +37,6 @@ function App() {
           <Route path="/ocr" element={<OCR />} />
           <Route path="/compare" element={<Compare />} />
           <Route path="/real" element={<Real />} />
-          <Route path="/apis" element={<APIs />} />
         </Routes>
         <Footer />
       </Router>
