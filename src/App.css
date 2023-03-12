@@ -683,7 +683,7 @@ ul.dropdown-menu li {
 }
 
 .banner .block {
-    padding-top: 120px;
+    padding-top: 20px;
 }
 
 .banner .block h1 {
@@ -760,10 +760,6 @@ ul.dropdown-menu li {
 
 .about-item .icon {
     float: left;
-}
-
-.about-item .content {
-    padding-left: 80px;
 }
 
 .process {

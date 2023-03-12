@@ -81,7 +81,7 @@ const Gender = () => {
                         handleSubmit();
                       }}
                     >
-                      Send Message
+                      Submit
                     </button>
                   </form>
                   Same: {gender}

@@ -90,7 +90,7 @@ const Contact = () => {
                       name="submit"
                       type="submit"
                     >
-                      Send Message
+                      Submit
                     </button>
                   </form>
                 </div>

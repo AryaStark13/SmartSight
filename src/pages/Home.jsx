@@ -23,10 +23,14 @@ const Home = () => {
                   exploring our API today and see how it can transform the way
                   you build your applications.
                 </p>
-                <Link to="/docs" className="btn btn-main">
+                <a
+                  href="https://docs.google.com/document/d/10gEhd0Xyci4D2TDdruo2sPDvp44z-uVErGmHMMeV_ms/edit?usp=sharing"
+                  className="btn btn-main"
+                  target={"_blank"}
+                >
                   Learn more about SmartSight API
                   <i className="fa fa-angle-right ml-2"></i>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -78,7 +82,7 @@ const Home = () => {
                   <p className="mb-4">
                     Enhanced AI Models that provide state of the art results
                   </p>
-                  <a href="#"> Read More </a>
+                  <Link href="/real"> Read More </Link>
                 </div>
               </div>
             </div>
@@ -95,7 +99,7 @@ const Home = () => {
                     fast responses to your requests.
                   </p>
 
-                  <Link to="/"> Read More </Link>
+                  <Link to="/compare"> Read More </Link>
                 </div>
               </div>
             </div>
@@ -106,12 +110,12 @@ const Home = () => {
                   <i className="ti-panel"></i>
                 </div>
                 <div className="content">
-                  <h4 className="mt-3 mb-3">Identifying Interests</h4>
+                  <h4 className="mt-3 mb-3">Uncovering Inclinations</h4>
                   <p className="mb-4">
                     Our Open Source APIs are free to use and open to collaborate
                     to all
                   </p>
-                  <Link to="/real"> Read More </Link>
+                  <Link to="/interests"> Read More </Link>
                 </div>
               </div>
             </div>

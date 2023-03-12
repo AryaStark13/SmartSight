@@ -46,9 +46,13 @@ const Header = () => {
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="/docs">
+              <a
+                className="nav-link"
+                href="https://docs.google.com/document/d/10gEhd0Xyci4D2TDdruo2sPDvp44z-uVErGmHMMeV_ms/edit?usp=sharing"
+                target="_blank"
+              >
                 Documentation
-              </Link>
+              </a>
             </li>
             <li className="nav-item dropdown">
               <div

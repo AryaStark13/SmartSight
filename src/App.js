@@ -15,15 +15,12 @@ import Real from "./pages/Real";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import APIs from "./pages/APIs";
-import Python from "./components/Python";
-import Javascript from "./components/Javascript";
-import Docs from "./pages/Docs";
 import alanBtn from "@alan-ai/alan-sdk-web";
 
 function App() {
   useEffect(() => {
     alanBtn({
-      key: "bc9219ac3cf1c36396f0ed66da3e63572e956eca572e1d8b807a3e2338fdd0dc/stage",
+      key: "",
     });
   }, []);
   return (
@@ -43,9 +40,6 @@ function App() {
           <Route path="/compare" element={<Compare />} />
           <Route path="/real" element={<Real />} />
           <Route path="/apis" element={<APIs />} />
-          <Route path="/docs-python" element={<Python />} />
-          <Route path="/docs-js" element={<Javascript />} />
-          <Route path="/docs" element={<Docs />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />

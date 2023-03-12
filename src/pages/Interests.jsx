@@ -52,7 +52,7 @@ const Gender = () => {
           <div className="row">
             <div className="col-lg-10 col-md-12 col-sm-12">
               <span className="text-color">SmartSight API</span>
-              <h3 className="text-md mb-5">Interest Identification</h3>
+              <h3 className="text-md mb-5">Uncovering Inclinations</h3>
               <div className="row">
                 <div className="col-lg-8">
                   <form id="contact-form" className="contact__form form">
@@ -74,13 +74,13 @@ const Gender = () => {
                           handleSubmit();
                         }}
                       >
-                        Send Message
+                        Submit
                       </button>
                     ) : (
                       <>Model is Loading...</>
                     )}
                   </form>
-                  Interests: {gender}
+                  Interests: Fond of {gender}
                 </div>
                 <div className="col-lg-6"></div>
               </div>

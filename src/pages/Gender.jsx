@@ -78,13 +78,13 @@ const Gender = () => {
                           handleSubmit();
                         }}
                       >
-                        Send Message
+                        Submit
                       </button>
                     ) : (
                       <>Model is Loading...</>
                     )}
                   </form>
-                  Gender: {gender}
+                  Gender: <b>{gender}</b>
                 </div>
                 <div className="col-lg-6">
                   <img src={image} />

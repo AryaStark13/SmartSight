@@ -74,12 +74,13 @@ const Gender = () => {
                           handleSubmit();
                         }}
                       >
-                        Send Message
+                        Submit
                       </button>
                     ) : (
                       <>Model is Loading...</>
                     )}
                   </form>
+                  {details}
                   {/* Details: {Object.entries(details.detail).map(([key, value]) => ())} */}
                 </div>
                 <div className="col-lg-6"></div>
