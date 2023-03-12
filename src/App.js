@@ -1,5 +1,5 @@
 import "./App.css";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
@@ -12,24 +12,23 @@ import Interests from "./pages/Interests";
 import OCR from "./pages/OCR";
 import Compare from "./pages/Compare";
 import Real from "./pages/Real";
-import Contact from "./pages/Contact";
 import About from "./pages/About";
 import APIs from "./pages/APIs";
-import alanBtn from "@alan-ai/alan-sdk-web";
+// import alanBtn from "@alan-ai/alan-sdk-web";
 
 function App() {
-  useEffect(() => {
-    alanBtn({
-      key: "",
-    });
-  }, []);
+  // useEffect(() => {
+  //   alanBtn({
+  //     key: "",
+  //   });
+  // }, []);
   return (
     <div className="App">
       <Router>
         <Header />
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/home" element={<Home />} />
@@ -40,7 +39,6 @@ function App() {
           <Route path="/compare" element={<Compare />} />
           <Route path="/real" element={<Real />} />
           <Route path="/apis" element={<APIs />} />
-          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </Router>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/images/logo.png";
 
 const Header = () => {
   return (
@@ -8,8 +9,8 @@ const Header = () => {
       id="navbar"
     >
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/home">
-          <img src="images/logo.png" alt="" className="img-fluid" />
+        <Link className="navbar-brand" to="/">
+          <img src={logo} alt="" className="img-fluid" />
         </Link>
 
         <button
@@ -40,12 +41,6 @@ const Header = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/apis">
-                APIs
-              </Link>
-            </li>
-
-            <li className="nav-item">
               <a
                 className="nav-link"
                 href="https://docs.google.com/document/d/10gEhd0Xyci4D2TDdruo2sPDvp44z-uVErGmHMMeV_ms/edit?usp=sharing"
@@ -62,30 +57,47 @@ const Header = () => {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                Demo
+                APIs
               </div>
               <ul className="dropdown-menu" aria-labelledby="dropdown05">
                 <li>
-                  <Link className="dropdown-item" to="/docs-python">
-                    Python
+                  <Link className="dropdown-item" to="/gender">
+                    Gender Detection
                   </Link>
                 </li>
-
                 <li>
-                  <Link className="dropdown-item" to="docs-js">
-                    Javascript
+                  <Link className="dropdown-item" to="/interests">
+                    Interests
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/ocr">
+                    OCR
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/real">
+                    Animated Face Detection
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/compare">
+                    Compare
                   </Link>
                 </li>
               </ul>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">
-                Contact
-              </Link>
+              <a
+                className="nav-link"
+                href="https://github.com/Jay4Codes/SmartSight"
+                target="_blank"
+              >
+                Github
+              </a>
             </li>
           </ul>
-
-          <Link to="/" className="btn btn-solid-border d-none d-lg-block">
+          <Link to="/login" className="btn btn-solid-border d-none d-lg-block">
             Login <i className="fa fa-angle-right ml-2"></i>
           </Link>
         </div>

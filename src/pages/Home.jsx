@@ -126,7 +126,7 @@ const Home = () => {
                   <i className="ti-headphone-alt"></i>
                 </div>
                 <div className="content">
-                  <h4 className="mt-3 mb-3">AI Enhancement</h4>
+                  <h4 className="mt-3 mb-3">Docs</h4>
                   <p className="mb-4">
                     Enhanced AI Models that provide state of the art results
                   </p>
